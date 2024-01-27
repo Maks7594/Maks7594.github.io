@@ -1,0 +1,39 @@
+/* CSS is how you can add style to your website, such as colors, fonts, and positioning of your
+   HTML content. To learn how to do something, just try searching Google for questions like
+   "how to change link color." */
+
+body {
+  background-color: black;
+  color: white;
+  font-family: Ubuntu;
+}
+
+a:link {
+  color: #00ccff;
+}
+
+a:visited {
+  color: #00ccff;
+}
+
+a:hover {
+  color: #00ccff;
+}
+
+a:active {
+  color: #00ccff;
+}
+
+@font-face {
+    font-family: 'Ubuntu';
+    src: url('untitledsky.neocities.org/fonts/Ubuntu-Regular.ttf') format('truetype'),
+         url('untitledsky.neocities.org/fonts/Ubuntu-Light.ttf') format('truetype'),
+         url('untitledsky.neocities.org/fonts/Ubuntu-Medium.ttf') format('truetype');
+    /* Additional font formats can be added as needed. */
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ubuntu', calibri; /* Fallback font for compatibility */
+}
