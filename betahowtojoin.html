@@ -80,7 +80,7 @@
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-    transition: transform 0.3s ease;
+    transition: transform 0.5s ease;
   }
   .tutorial-item:hover {
     transform: translateY(-5px);
@@ -101,7 +101,8 @@
     height: auto;
     border-radius: 5px;
     margin: 15px 0;
-  }
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
   .btn {
     display: inline-block;
     background: var(--primary-color);
@@ -113,7 +114,7 @@
     text-decoration: none;
     font-size: 1rem;
     font-weight: 600;
-    transition: background 0.3s ease;
+    transition: 0.3s ease;
     margin-top: 20px;
   }
   .btn:hover {
@@ -126,22 +127,22 @@
     padding: 20px 0;
     margin-top: 50px;
   }
-  @media (max-width: 768px) {
-    .nav-links {
-      display: none;
-    }
     .tutorial-section h1 {
       font-size: 2rem;
     }
-    .bedrock {
+
+.bedrock-div {
     text-align: center;
-    padding: 20px;
-    border: 2px solid #000;
+    padding: 25px;
+    margin: auto;
+    background-color: var(--secondary-color);
     border-radius: 10px;
-    margin: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 76%;
 }
 
-  }
 </style>
 </head>
 <body>
@@ -149,6 +150,8 @@
     <nav class="container">
 	<a href="betaindex.html" class="logo">UntitledSky</a>
       <ul class="nav-links">
+        <li><a href="betahowtojoin.html">How to Join</a></li>
+        <li><a href="rules.html">Rules</a></li>
         <li><a href="donate.html">Donate</a></li>
         <li><a href="vote.html">Vote</a></li>
         <li><a href="discord.html">Discord</a></li>
@@ -163,7 +166,7 @@
         <div class="tutorial-item">
           <h2>Step 1: Launch Game</h2>
           <ol>
-            <li>Ensure you have Minecraft Java Edition bought and installed (1.19.4 or later)</li>
+            <li>Ensure you have <b>Minecraft Java 1.19.4 or later</b></li>
             <li>Launch Minecraft and click on "Multiplayer" from the main menu</li>
           </ol>
         </div>
@@ -187,13 +190,14 @@
     </div>
 </section>
 <section class="bedrock">
-	<h2>I am on Bedrock and not Java!</h2>
-	<p>Although this is possible, the tutorial is coming soon. Stay tuned!</p>
+  <div class="bedrock-div">
+	  <h2>I am on <b>Bedrock!</b> (Xbox/Playstation/Switch/Mobile)</h2>
+	  <p>Although this is possible, the tutorial is coming soon. Stay tuned!</p>
+  </div>
 </section>
   <footer>
     <div class="container">
       <p>UntitledSky by Maks7594. Made with ❤️</p>
-      <p>Need help? Join our <a href="discord.html" style="color: var(--primary-color);">Discord</a> for support!</p>
     </div>
   </footer>
 </body>
