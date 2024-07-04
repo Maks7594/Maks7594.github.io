@@ -1,17 +1,204 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>How to Join</title>
-    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
-  </head>
-  <body>
-    <h1>How to Join</h1>
-    <p>There are a few ways to join my server.</p>
-    <h2>Java Edition</h2>
-    <p>1. Open Minecraft.<br>2. Go to Multiplayer.<br>3. Go to Direct Connection (A) or Add Server. (B)<br>3A. Paste in <strong>untitledsky.minehut.gg</strong> in the Server Address textbox and hit Join Server.<br>3B. Name the server whatever you'd like, paste in <strong>untitledsky.minehut.gg</strong> in Server Address. Then, hit Done and double-click on our server.<br><br>You also can join <strong>minehut.gg</strong> and enter command <strong>/join UntitledSky</strong>.</p>
-    <h2>Bedrock Edition</h2>
-    <p>1. Open Minecraft.<br>2. Click Play.<br>3. Go to Servers.<br>4. Scroll down and click "Add Server".<br>5. In Server Address, paste in <strong>bedrock.minehut.com</strong> and port <strong>19132</strong> and join. Then, enter command <strong>/join UntitledSky</strong>. <a href="index.html">Homepage</a></p>
-  </body>
+<html><head><base href="https://maks7594.github.io/betahowtojoin.html"><title>UntitledSky - How to Join</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #7289da;
+    --secondary-color: #23272a;
+    --text-color: #ffffff;
+    --background-color: #2c2f33;
+    --accent-color: #99aab5;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header {
+    background: var(--primary-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  .nav-links li {
+    margin-left: 20px;
+  }
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: var(--secondary-color);
+  }
+  .tutorial-section {
+    padding: 100px 0 50px;
+  }
+  .tutorial-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    text-align: center;
+  }
+  .tutorial-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  .tutorial-item {
+    background: var(--secondary-color);
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    transition: transform 0.5s ease;
+  }
+  .tutorial-item:hover {
+    transform: translateY(-5px);
+  }
+  .tutorial-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: var(--primary-color);
+  }
+  .tutorial-item ol {
+    padding-left: 20px;
+  }
+  .tutorial-item li {
+    margin-bottom: 10px;
+  }
+  .tutorial-item img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+    margin: 15px 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+  .btn {
+    display: inline-block;
+    background: var(--primary-color);
+    color: var(--text-color);
+    padding: 12px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 1rem;
+    font-weight: 600;
+    transition: 0.3s ease;
+    margin-top: 20px;
+  }
+  .btn:hover {
+    background: #5b6eae;
+  }
+  footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+    margin-top: 50px;
+  }
+    .tutorial-section h1 {
+      font-size: 2rem;
+    }
+
+.bedrock-div {
+    text-align: center;
+    padding: 25px;
+    margin: auto;
+    background-color: var(--secondary-color);
+    border-radius: 10px;
+
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    width: 76%;
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+	<a href="index.html" class="logo">UntitledSky</a>
+      <ul class="nav-links">
+        <li><a href="howtojoin.html">How to Join</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="vote.html">Vote</a></li>
+        <li><a href="discord.html">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="tutorial-section">
+    <div class="container">
+      <h1>How to Join UntitledSky</h1>
+      <div class="tutorial-grid">
+        <div class="tutorial-item">
+          <h2>Step 1: Launch Game</h2>
+          <ol>
+            <li>Ensure you have <b>Minecraft Java 1.20.4 or later</b></li>
+            <li>Launch Minecraft and click on "Multiplayer" from the main menu</li>
+          </ol>
+        </div>
+        <div class="tutorial-item">
+          <h2>Step 2-A: Direct Connect</h2>
+          <ol>
+            <li>In the Multiplayer menu, click on "Direct Connect"</li>
+            <li>Type in the IP: <b>untitledsky.minehut.gg</b></li>
+			<li>Click <b>Join Server</b></li>
+          </ol>
+        </div>
+        <div class="tutorial-item">
+          <h2>Step 2-B: Add Server</h2>
+          <ol>
+            <li>In the Multiplayer menu, click on "Add Server"</li>
+            <li>Name our server whatever you want, then<br>type in the IP: <b>untitledsky.minehut.gg</b></li>
+			<li>Click <b>Add Server</b>, then double-click on our server.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+</section>
+<section class="bedrock">
+  <div class="bedrock-div">
+	  <h2>I am on <b>Bedrock!</b> (Xbox/Playstation/Switch/Mobile)</h2>
+	  <p>Although this is possible, the tutorial is coming soon. Stay tuned!</p>
+  </div>
+</section>
+  <footer>
+    <div class="container">
+      <p>UntitledSky by Maks7594. Made with ❤️</p>
+    </div>
+  </footer>
+</body>
 </html>

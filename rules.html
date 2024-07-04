@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html><head><base href="https://untitledsky.net/rules">
+<title>UntitledSky - Server Rules</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --primary-color: #7289da;
+    --secondary-color: #23272a;
+    --text-color: #ffffff;
+    --background-color: #2c2f33;
+    --accent-color: #99aab5;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    line-height: 1.6;
+  }
+  .container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  header {
+    background: var(--primary-color);
+    padding: 20px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .logo {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    text-decoration: none;
+  }
+  .nav-links {
+    display: flex;
+    list-style: none;
+  }
+  .nav-links li {
+    margin-left: 20px;
+  }
+  .nav-links a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s ease;
+  }
+  .nav-links a:hover {
+    color: var(--secondary-color);
+  }
+  .rules-hero {
+    background: linear-gradient(#7289da, #2c2f33) no-repeat center center/cover;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 60px;
+  }
+  .rules-hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+  }
+  .rules-content {
+    padding: 50px 0;
+  }
+  .rules-list {
+    background: var(--secondary-color);
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+  }
+  .rules-list h2 {
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  .rules-list ol {
+    padding-left: 20px;
+  }
+  .rules-list li {
+    margin-bottom: 15px;
+  }
+  .rules-note {
+    background: var(--primary-color);
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+    font-weight: 600;
+  }
+  footer {
+    background: var(--secondary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 20px 0;
+  }
+  @media (max-width: 768px) {
+    .nav-links {
+      display: none;
+    }
+    .rules-hero h1 {
+      font-size: 2rem;
+    }
+  }
+</style>
+</head>
+<body>
+  <header>
+    <nav class="container">
+	<a href="index.html" class="logo">UntitledSky</a>
+      <ul class="nav-links">
+        <li><a href="howtojoin.html">How to Join</a></li>
+        <li><a href="rules.html">Rules</a></li>
+        <li><a href="donate.html">Donate</a></li>
+        <li><a href="vote.html">Vote</a></li>
+        <li><a href="discord.html">Discord</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="rules-hero">
+    <div class="container">
+      <h1>UntitledSky Server Rules</h1>
+    </div>
+  </section>
+
+  <section class="rules-content container">
+    <div class="rules-list">
+      <h2>Rules</h2>
+      <ol>
+        <li>Be respectful to all players and staff members. Harassment, bullying, or discrimination of any kind will not be tolerated.</li>
+        <li>No spamming or excessive use of caps in chat. Keep the chat clean and friendly.</li>
+        <li>Do not advertise other servers or websites.</li>
+        <li>Use of hacks, cheats, or any unauthorized modifications that give an unfair advantage is strictly prohibited.</li>
+        <li>Do not exploit bugs or glitches. Report them to staff immediately.</li>
+        <li>Respect other players' privacy. Do not share personal information without consent.</li>
+        <li>Do not impersonate staff members or other players.</li>
+        <li>Follow instructions given by staff members. If you have an issue with a staff decision, please contact a higher-ranked staff member.</li>
+      </ol>
+
+    <div class="rules-note">
+      <p>These rules are subject to change. It is your responsibility to stay updated with the latest rules. Breaking any of these rules may result in warns, mutes, tempbans or permabans depending on the severity and frequency of the offense.</p>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container">
+      <p>UntitledSky by Maks7594. Made with ❤️</p>
+    </div>
+  </footer>
+</body>
+</html>
