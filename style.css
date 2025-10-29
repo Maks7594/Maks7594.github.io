@@ -5,8 +5,6 @@ body {
 }
 
 .song {
-  border: 10px;
-  padding: 0.5rem;
   display: flex;
   flex-direction: column;
   width: 500px;
